@@ -1,0 +1,16 @@
+# ROS 2 generated folders
+build/
+install/
+log/
+
+# Python generated files
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# VS Code generated database
+.vscode/browse.vc.db
+
+# Logs
+*.log

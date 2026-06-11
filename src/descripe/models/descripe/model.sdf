@@ -1,0 +1,1100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.10">
+  <model name="descripe" canonical_link="base_link">
+    <pose>0 0 0 0 0 0</pose>
+    <static>false</static>
+    <self_collide>false</self_collide>
+    <link name="base_link">
+      <pose>0 0 0 0 0 0</pose>
+      <gravity>false</gravity>
+      <inertial>
+        <pose>-5.19355364634e-05 2.96857670669e-05 0.00561243921806 0 0 0</pose>
+        <mass>1.52868437083991</mass>
+        <inertia>
+          <ixx>0.00427436516465699</ixx>
+          <ixy>-7.44281487802473E-07</ixy>
+          <ixz>1.301987734112E-07</ixz>
+          <iyy>0.00427684753161486</iyy>
+          <iyz>-1.57041596548467E-07</iyz>
+          <izz>0.00821958386021356</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="base_link_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="1">
+      <pose>0.13 0 -0.02 1.5708 -0.08134 0</pose>
+      <inertial>
+        <pose>0.0361016048824 -3.81998846166e-08 -2.166279639e-08 0 0 0</pose>
+        <mass>0.017511882705247</mass>
+        <inertia>
+          <ixx>7.21182417832099E-07</ixx>
+          <ixy>-3.05683665432509E-11</ixy>
+          <ixz>-1.54396755567864E-11</ixz>
+          <iyy>1.08038679441715E-05</iyy>
+          <iyz>-4.4259405144789E-12</iyz>
+          <izz>1.12029329427599E-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="1_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/1.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="1_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="11">
+      <pose>0.209735502236 -0.0139999999999 -0.0135000243662 -1.5708041042 1.08067795722 3.14158609021</pose>
+      <inertial>
+        <pose>0.197424984552 3.21550867238e-05 0.000101301618166 0 0 0</pose>
+        <mass>0.00971847027454767</mass>
+        <inertia>
+          <ixx>5.27630352845987E-08</ixx>
+          <ixy>-1.00662349903563E-13</ixy>
+          <ixz>2.55645061504699E-14</ixz>
+          <iyy>8.64526176409532E-05</iyy>
+          <iyz>1.01309643570161E-09</iyz>
+          <izz>8.64554877354837E-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="11_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/11.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="11_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/11.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="111">
+      <pose>0.0238676329232 -0.0139987800789 -0.361867154928 -1.5708041042 1.08067795722 3.14158609021</pose>
+      <inertial>
+        <pose>-2.4841240176e-15 7.42461647718e-16 -0.004074095497 0 0 0</pose>
+        <mass>0.000539506193520435</mass>
+        <inertia>
+          <ixx>1.25867201372513E-08</ixx>
+          <ixy>3.10192729707385E-25</ixy>
+          <ixz>-5.77475465138582E-23</ixz>
+          <iyy>1.25867201372513E-08</iyy>
+          <iyz>-1.04121359605112E-22</iyz>
+          <izz>3.31683628481004E-09</izz>
+        </inertia>
+      </inertial>
+      <visual name="111_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/111.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.505882352941176 0.505882352941176 0.584313725490196 1</ambient>
+          <diffuse>0.505882352941176 0.505882352941176 0.584313725490196 1</diffuse>
+        </material>
+      </visual>
+      <collision name="111_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/111.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="end">
+      <pose>-1.85822924686e-08 1.21279681379e-06 -0.361866848183 -1.21446231766e-08 1.46963596734e-05 2.98502953506e-07</pose>
+      <inertial>
+        <pose>-6.77813360994e-12 4.78702383289e-10 -7.2070360043e-05 0 0 0</pose>
+        <mass>0.0073232288565885</mass>
+        <inertia>
+          <ixx>1.29389854254997E-06</ixx>
+          <ixy>5.90347232709036E-14</ixy>
+          <ixz>3.32239753383043E-16</ixz>
+          <iyy>1.29389851994944E-06</iyy>
+          <iyz>1.08771194613915E-15</iyz>
+          <izz>2.45573100523025E-06</izz>
+        </inertia>
+      </inertial>
+      <visual name="end_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/end.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="end_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/end.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="12">
+      <pose>0.209735493879 0.0139999999999 -0.0134999218565 -1.5708041042 1.08067795722 3.14158609021</pose>
+      <inertial>
+        <pose>0.197425015441 -3.21557342481e-05 -0.000101301405876 0 0 0</pose>
+        <mass>0.00971847007327643</mass>
+        <inertia>
+          <ixx>5.27630255465164E-08</ixx>
+          <ixy>-7.6472615104267E-14</ixy>
+          <ixz>1.79725486257925E-14</ixz>
+          <iyy>8.64526176495693E-05</iyy>
+          <iyz>1.01311232467429E-09</iyz>
+          <izz>8.64554877047388E-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="12_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/12.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="12_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/12.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="121">
+      <pose>0.0238676245666 0.0140012199209 -0.361867052418 -1.5708041042 1.08067795722 3.14158609021</pose>
+      <inertial>
+        <pose>-2.92821322745e-15 5.55111512313e-16 0.004074095497 0 0 0</pose>
+        <mass>0.000539506193520435</mass>
+        <inertia>
+          <ixx>1.25867201372513E-08</ixx>
+          <ixy>-3.10192729707385E-25</ixy>
+          <ixz>-5.4335426487077E-23</ixz>
+          <iyy>1.25867201372513E-08</iyy>
+          <iyz>-1.08877648127292E-22</iyz>
+          <izz>3.31683628481004E-09</izz>
+        </inertia>
+      </inertial>
+      <visual name="121_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/121.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.505882352941176 0.505882352941176 0.584313725490196 1</ambient>
+          <diffuse>0.505882352941176 0.505882352941176 0.584313725490196 1</diffuse>
+        </material>
+      </visual>
+      <collision name="121_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/121.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="2">
+      <pose>-0.065 -0.11258 -0.02 1.5708 -0.08134 -2.0944</pose>
+      <inertial>
+        <pose>0.0361016048824 -3.81998845611e-08 -2.16627963068e-08 0 0 0</pose>
+        <mass>0.017511882705247</mass>
+        <inertia>
+          <ixx>7.21182417832101E-07</ixx>
+          <ixy>-3.05683665426289E-11</ixy>
+          <ixz>-1.54396755563605E-11</ixz>
+          <iyy>1.08038679441715E-05</iyy>
+          <iyz>-4.42594051820329E-12</iyz>
+          <izz>1.12029329427599E-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="2_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/2.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="2_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="21">
+      <pose>-0.116992410681 -0.174632715882 -0.0135000243662 -1.5708041042 1.08067795722 1.04718609021</pose>
+      <inertial>
+        <pose>0.197425007173 7.93569963735e-05 7.06996290023e-05 0 0 0</pose>
+        <mass>0.00971847016176818</mass>
+        <inertia>
+          <ixx>5.27630470383877E-08</ixx>
+          <ixy>-1.59042470481183E-14</ixy>
+          <ixz>2.20147016262096E-14</ixz>
+          <iyy>8.64542546902223E-05</iyy>
+          <iyz>1.74497344875077E-09</iyz>
+          <izz>8.64538506463955E-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="21_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/21.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="21_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/21.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="211">
+      <pose>-0.0240566311968 -0.0136674844316 -0.361867154928 -1.5708041042 1.08067795722 1.04718609021</pose>
+      <inertial>
+        <pose>-2.77555756156e-15 2.28983498829e-16 -0.004074095497 0 0 0</pose>
+        <mass>0.000539506193520435</mass>
+        <inertia>
+          <ixx>1.25867201372514E-08</ixx>
+          <ixy>0</ixy>
+          <ixz>-4.34470654252548E-24</ixz>
+          <iyy>1.25867201372514E-08</iyy>
+          <iyz>-3.59090668585845E-23</iyz>
+          <izz>3.31683628481004E-09</izz>
+        </inertia>
+      </inertial>
+      <visual name="211_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/211.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.505882352941176 0.505882352941176 0.584313725490196 1</ambient>
+          <diffuse>0.505882352941176 0.505882352941176 0.584313725490196 1</diffuse>
+        </material>
+      </visual>
+      <collision name="211_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/211.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="22">
+      <pose>-0.0927437637638 -0.188632827405 -0.0134999218565 -1.5708041042 1.08067795722 1.04718609021</pose>
+      <inertial>
+        <pose>0.197424998741 -1.93778028246e-05 -0.000104501331502 0 0 0</pose>
+        <mass>0.00971846772863301</mass>
+        <inertia>
+          <ixx>5.27630409314115E-08</ixx>
+          <ixy>-9.65629911330809E-15</ixy>
+          <ixz>1.93074673532759E-15</ixz>
+          <iyy>8.64524127133427E-05</iyy>
+          <iyz>6.2980780077915E-10</iyz>
+          <izz>8.64556923930788E-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="22_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/22.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="22_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/22.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="221">
+      <pose>0.000192015720547 -0.027667595955 -0.361867052418 -1.5708041042 1.08067795722 1.04718609021</pose>
+      <inertial>
+        <pose>-2.55351295664e-15 1.66533453694e-16 0.004074095497 0 0 0</pose>
+        <mass>0.000539506193520435</mass>
+        <inertia>
+          <ixx>1.25867201372513E-08</ixx>
+          <ixy>0</ixy>
+          <ixz>-1.78596828051784E-24</ixz>
+          <iyy>1.25867201372513E-08</iyy>
+          <iyz>-3.967356130808E-23</iyz>
+          <izz>3.31683628481004E-09</izz>
+        </inertia>
+      </inertial>
+      <visual name="221_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/221.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.505882352941176 0.505882352941176 0.584313725490196 1</ambient>
+          <diffuse>0.505882352941176 0.505882352941176 0.584313725490196 1</diffuse>
+        </material>
+      </visual>
+      <collision name="221_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/221.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="3">
+      <pose>-0.065 0.11258 -0.02 1.6177 -0.08134 2.0944</pose>
+      <inertial>
+        <pose>0.0361016048824 -3.91730035354e-08 -1.98490237302e-08 0 0 0</pose>
+        <mass>0.017511882705247</mass>
+        <inertia>
+          <ixx>7.21182417832099E-07</ixx>
+          <ixy>-3.12582639118428E-11</ixy>
+          <ixz>-1.39903378111715E-11</ixz>
+          <iyy>1.0804743752541E-05</iyy>
+          <iyz>1.86745132475821E-08</iyz>
+          <izz>1.12020571343904E-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="3_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/3.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="3_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/3.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="31">
+      <pose>-0.092743781969 0.188632858926 -0.0135003683791 -1.57085630469 1.08067795652 -1.04724326913</pose>
+      <inertial>
+        <pose>0.197425016832 4.95576405137e-05 9.40214578554e-05 0 0 0</pose>
+        <mass>0.00971846919620296</mass>
+        <inertia>
+          <ixx>5.27630377715992E-08</ixx>
+          <ixy>-4.33566700471402E-14</ixy>
+          <ixz>2.8307333567339E-14</ixz>
+          <iyy>8.64530598532524E-05</iyy>
+          <iyz>1.4491796074449E-09</iyz>
+          <izz>8.64550454084133E-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="31_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/31.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="31_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/31.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="311">
+      <pose>0.00018279366749 0.0276623135594 -0.36186749881 -1.57085630469 1.08067795652 -1.04724326913</pose>
+      <inertial>
+        <pose>2.77555756156e-17 6.38378239159e-16 -0.004074095497 0 0 0</pose>
+        <mass>0.000539506193520435</mass>
+        <inertia>
+          <ixx>1.25867201372513E-08</ixx>
+          <ixy>2.06795153138257E-25</ixy>
+          <ixz>-5.06648125188729E-24</ixz>
+          <iyy>1.25867201372513E-08</iyy>
+          <iyz>-2.67799723314043E-23</iyz>
+          <izz>3.31683628481005E-09</izz>
+        </inertia>
+      </inertial>
+      <visual name="311_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/311.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.505882352941176 0.505882352941176 0.584313725490196 1</ambient>
+          <diffuse>0.505882352941176 0.505882352941176 0.584313725490196 1</diffuse>
+        </material>
+      </visual>
+      <collision name="311_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/311.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="32">
+      <pose>-0.116992392476 0.174632684361 -0.0134995778435 -1.57085630469 1.08067795652 -1.04724326913</pose>
+      <inertial>
+        <pose>0.197424983199 -4.95577731195e-05 -9.40213842751e-05 0 0 0</pose>
+        <mass>0.00971846911141238</mass>
+        <inertia>
+          <ixx>5.27630336772175E-08</ixx>
+          <ixy>-2.03796394632002E-14</ixy>
+          <ixz>1.61252797671359E-14</ixz>
+          <iyy>8.64530598526678E-05</iyy>
+          <iyz>1.44917885692628E-09</iyz>
+          <izz>8.64550453997248E-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="32_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/32.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="32_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/32.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="321">
+      <pose>-0.0240658168395 0.0136621389943 -0.361866708275 -1.57085630469 1.08067795652 -1.04724326913</pose>
+      <inertial>
+        <pose>-5.89805981832e-17 6.66133814775e-16 0.004074095497 0 0 0</pose>
+        <mass>0.000539506193520436</mass>
+        <inertia>
+          <ixx>1.25867201372514E-08</ixx>
+          <ixy>3.10192729707385E-25</ixy>
+          <ixz>5.89366186444032E-24</ixz>
+          <iyy>1.25867201372514E-08</iyy>
+          <iyz>-2.12999007732405E-23</iyz>
+          <izz>3.31683628481004E-09</izz>
+        </inertia>
+      </inertial>
+      <visual name="321_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/321.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.505882352941176 0.505882352941176 0.584313725490196 1</ambient>
+          <diffuse>0.505882352941176 0.505882352941176 0.584313725490196 1</diffuse>
+        </material>
+      </visual>
+      <collision name="321_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/321.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="4">
+      <pose>0 0 -0.02 0 -0 0.0374025114053</pose>
+      <inertial>
+        <pose>4.22051041338e-09 7.90242890569e-09 0.00644065846948 0 0 0</pose>
+        <mass>0.00151305684520863</mass>
+        <inertia>
+          <ixx>7.76380429873237E-08</ixx>
+          <ixy>1.06758944474477E-13</ixy>
+          <ixz>-1.27965978349675E-13</ixz>
+          <iyy>6.42955272093896E-08</iyy>
+          <iyz>2.85021212069954E-13</iyz>
+          <izz>5.48378642213392E-08</izz>
+        </inertia>
+      </inertial>
+      <visual name="4_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/4.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.756862745098039 0.768627450980392 0.752941176470588 1</ambient>
+          <diffuse>0.756862745098039 0.768627450980392 0.752941176470588 1</diffuse>
+        </material>
+      </visual>
+      <collision name="4_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/4.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="41">
+      <pose>0 0 -0.024 1.57079632679 -0 0.0374025114053</pose>
+      <inertial>
+        <pose>-1.36002320517e-15 -1.94289029309e-16 -2.77555756156e-17 0 0 0</pose>
+        <mass>0.000852115950566532</mass>
+        <inertia>
+          <ixx>1.2127907628535E-08</ixx>
+          <ixy>1.51636995168832E-23</ixy>
+          <ixz>-4.13590306276514E-25</ixz>
+          <iyy>1.48133687782392E-08</iyy>
+          <iyz>2.10508903819108E-24</iyz>
+          <izz>1.2127907628535E-08</izz>
+        </inertia>
+      </inertial>
+      <visual name="41_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/41.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.756862745098039 0.768627450980392 0.752941176470588 1</ambient>
+          <diffuse>0.756862745098039 0.768627450980392 0.752941176470588 1</diffuse>
+        </material>
+      </visual>
+      <collision name="41_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/41.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="411">
+      <pose>0 0 -0.024 0 -1.57079632679 -3.10419014218</pose>
+      <inertial>
+        <pose>-0.113275443708 -4.33623970064e-10 7.8938650061e-10 0 0 0</pose>
+        <mass>0.0151504453724169</mass>
+        <inertia>
+          <ixx>6.41413678015845E-07</ixx>
+          <ixy>-1.26739956930487E-13</ixy>
+          <ixz>-2.84889742136951E-13</ixz>
+          <iyy>3.92328614975377E-05</iyy>
+          <iyz>-1.06798338889939E-13</iyz>
+          <izz>3.95821990660992E-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="411_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/411.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.756862745098039 0.768627450980392 0.752941176470588 1</ambient>
+          <diffuse>0.756862745098039 0.768627450980392 0.752941176470588 1</diffuse>
+        </material>
+      </visual>
+      <collision name="411_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/411.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="4111">
+      <pose>-2.13579931518e-15 1.00971860333e-15 -0.335867067885 -3.23108914887e-15 1.69749698993e-14 -1.53339381539</pose>
+      <inertial>
+        <pose>-7.99613625313e-10 -1.49719046882e-09 0.12004499805 0 0 0</pose>
+        <mass>0.00798617591742343</mass>
+        <inertia>
+          <ixx>1.96486123039808E-05</ixx>
+          <ixy>1.06758945081628E-13</ixy>
+          <ixz>1.27966215744159E-13</ixz>
+          <iyy>1.9806006955144E-05</iyy>
+          <iyz>-2.85021194990854E-13</iyz>
+          <izz>3.33730404518576E-07</izz>
+        </inertia>
+      </inertial>
+      <visual name="4111_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/4111.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.792156862745098 0.819607843137255 0.933333333333333 1</ambient>
+          <diffuse>0.792156862745098 0.819607843137255 0.933333333333333 1</diffuse>
+        </material>
+      </visual>
+      <collision name="4111_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/4111.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="41111">
+      <pose>-2.13579931518e-15 1.00971860333e-15 -0.335867067885 1.57079632679 1.69749698993e-14 -1.53339381539</pose>
+      <inertial>
+        <pose>8.32667268469e-17 6.93889390391e-17 3.05311331772e-16 0 0 0</pose>
+        <mass>0.000852115950566531</mass>
+        <inertia>
+          <ixx>1.2127907628535E-08</ixx>
+          <ixy>-5.7725988742426E-24</ixy>
+          <ixz>-2.48154183765908E-24</ixz>
+          <iyy>1.48133687782392E-08</iyy>
+          <iyz>-1.75584902064304E-23</iyz>
+          <izz>1.2127907628535E-08</izz>
+        </inertia>
+      </inertial>
+      <visual name="41111_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/41111.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.756862745098039 0.768627450980392 0.752941176470588 1</ambient>
+          <diffuse>0.756862745098039 0.768627450980392 0.752941176470588 1</diffuse>
+        </material>
+      </visual>
+      <collision name="41111_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/41111.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="411111">
+      <pose>-2.13579931518e-15 1.00971860333e-15 -0.335867067885 3.67313421371e-06 -1.57079265358 1.60819883827</pose>
+      <inertial>
+        <pose>-0.0258618985043 -8.44322264881e-10 1.53939538894e-09 0 0 0</pose>
+        <mass>0.00777029234237776</mass>
+        <inertia>
+          <ixx>5.68324834833635E-07</ixx>
+          <ixy>-1.26739956260412E-13</ixy>
+          <ixz>-2.84889744292174E-13</ixz>
+          <iyy>5.93752025348481E-07</iyy>
+          <iyz>-1.06798541145525E-13</iyz>
+          <izz>5.80409509616738E-07</izz>
+        </inertia>
+      </inertial>
+      <visual name="411111_visual_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/411111.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.756862745098039 0.768627450980392 0.752941176470588 1</ambient>
+          <diffuse>0.756862745098039 0.768627450980392 0.752941176470588 1</diffuse>
+        </material>
+      </visual>
+      <collision name="411111_collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://descripe/meshes/411111.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- FIX BASE LINK TO WORLD -->
+<joint name="joint_1" type="revolute">
+      <parent>base_link</parent>
+      <child>1</child>
+      <pose relative_to="base_link">0.13 0 -0.02 1.5708 -0.08134 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.02</damping>
+          <friction>0.0</friction>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name="joint_11" type="ball">
+      <parent>1</parent>
+      <child>11</child>
+      <pose relative_to="1">0.08 0 0.014 0 0 -2.14225469636</pose>
+    </joint>
+    <joint name="joint_111" type="ball">
+      <parent>11</parent>
+      <child>111</child>
+      <pose relative_to="11">0.39485 0 0 0 0 0</pose>
+    </joint>
+    <joint name="joint_end" type="fixed">
+      <parent>111</parent>
+      <child>end</child>
+      <pose relative_to="111">0.011235 -0.021058 -0.014 -1.5708 0 2.0609</pose>
+    </joint>
+    <joint name="joint_12" type="ball">
+      <parent>1</parent>
+      <child>12</child>
+      <pose relative_to="1">0.08 0 -0.014 0 0 -2.14225469636</pose>
+    </joint>
+    <joint name="joint_121" type="ball">
+      <parent>12</parent>
+      <child>121</child>
+      <pose relative_to="12">0.39485 0 0 0 0 0</pose>
+    </joint>
+    <joint name="joint_2" type="revolute">
+      <parent>base_link</parent>
+      <child>2</child>
+      <pose relative_to="base_link">-0.065 -0.11258 -0.02 1.5708 -0.08134 -2.0944</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.02</damping>
+          <friction>0.0</friction>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name="joint_21" type="ball">
+      <parent>2</parent>
+      <child>21</child>
+      <pose relative_to="2">0.08 0 0.014 0 0 -2.14225469636</pose>
+    </joint>
+    <joint name="joint_211" type="ball">
+      <parent>21</parent>
+      <child>211</child>
+      <pose relative_to="21">0.39485 0 0 0 0 0</pose>
+    </joint>
+    <joint name="joint_22" type="ball">
+      <parent>2</parent>
+      <child>22</child>
+      <pose relative_to="2">0.08 0 -0.014 0 0 -2.14225469636</pose>
+    </joint>
+    <joint name="joint_221" type="ball">
+      <parent>22</parent>
+      <child>221</child>
+      <pose relative_to="22">0.39485 0 0 0 0 0</pose>
+    </joint>
+    <joint name="joint_3" type="revolute">
+      <parent>base_link</parent>
+      <child>3</child>
+      <pose relative_to="base_link">-0.065 0.11258 -0.02 1.6177 -0.08134 2.0944</pose>
+      <axis>
+        <xyz>0 -0.046858 -0.9989</xyz>
+        <limit>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.02</damping>
+          <friction>0.0</friction>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name="joint_31" type="ball">
+      <parent>3</parent>
+      <child>31</child>
+      <pose relative_to="3">0.08 0.000656014541014 0.0139846217297 0.0253661095848 -0.039423241258 -2.14275479506</pose>
+    </joint>
+    <joint name="joint_311" type="ball">
+      <parent>31</parent>
+      <child>311</child>
+      <pose relative_to="31">0.39485 0 0 0 0 0</pose>
+    </joint>
+    <joint name="joint_32" type="ball">
+      <parent>3</parent>
+      <child>32</child>
+      <pose relative_to="3">0.08 -0.000656014541008 -0.0139846217297 0.0253661095848 -0.039423241258 -2.14275479506</pose>
+    </joint>
+    <joint name="joint_321" type="ball">
+      <parent>32</parent>
+      <child>321</child>
+      <pose relative_to="32">0.39485 0 0 0 0 0</pose>
+    </joint>
+    <joint name="joint_4" type="revolute">
+      <parent>base_link</parent>
+      <child>4</child>
+      <pose relative_to="base_link">0 0 -0.02 0 0 0.0374025114053</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.02</damping>
+          <friction>0.0</friction>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name="joint_41" type="revolute">
+      <parent>4</parent>
+      <child>41</child>
+      <pose relative_to="4">0 0 -0.004 1.57079632679 0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.02</damping>
+          <friction>0.0</friction>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name="joint_411" type="revolute">
+      <parent>41</parent>
+      <child>411</child>
+      <pose relative_to="41">0 0 0 1.57079632679 0 1.57079632679</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.02</damping>
+          <friction>0.0</friction>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name="joint_4111" type="prismatic">
+      <parent>411</parent>
+      <child>4111</child>
+      <pose relative_to="411">-0.311867067885 0 0 1.57079632679 0 1.57079632679</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-10</lower>
+          <upper>10</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.02</damping>
+          <friction>0.0</friction>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name="joint_41111" type="revolute">
+      <parent>4111</parent>
+      <child>41111</child>
+      <pose relative_to="4111">0 0 0 1.57079632679 0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.02</damping>
+          <friction>0.0</friction>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name="joint_411111" type="revolute">
+      <parent>41111</parent>
+      <child>411111</child>
+      <pose relative_to="41111">0 0 0 1.5708 0 1.5708</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-6.28</lower>
+          <upper>6.28</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.02</damping>
+          <friction>0.0</friction>
+        </dynamics>
+      </axis>
+    </joint>
+    <plugin filename="libgz-sim-detachable-joint-system.so" name="gz::sim::systems::DetachableJoint"> 
+      <parent_link>end</parent_link>
+      <child_model>descripe</child_model>
+      <child_link>121</child_link>
+      <attach_topic>close_loop_121</attach_topic>
+    </plugin>
+    <plugin filename="libgz-sim-detachable-joint-system.so" name="gz::sim::systems::DetachableJoint">
+      <parent_link>end</parent_link>
+      <child_model>descripe</child_model>
+      <child_link>211</child_link>
+      <attach_topic>close_loop_211</attach_topic>
+    </plugin>
+    <plugin filename="libgz-sim-detachable-joint-system.so" name="gz::sim::systems::DetachableJoint">
+      <parent_link>end</parent_link>
+      <child_model>descripe</child_model>
+      <child_link>221</child_link>
+      <attach_topic>close_loop_221</attach_topic>
+    </plugin>
+    <plugin filename="libgz-sim-detachable-joint-system.so" name="gz::sim::systems::DetachableJoint">
+      <parent_link>end</parent_link>
+      <child_model>descripe</child_model>
+      <child_link>311</child_link>
+      <attach_topic>close_loop_311</attach_topic>
+    </plugin>
+    <plugin filename="libgz-sim-detachable-joint-system.so" name="gz::sim::systems::DetachableJoint">
+      <parent_link>end</parent_link>
+      <child_model>descripe</child_model>
+      <child_link>321</child_link>
+      <attach_topic>close_loop_321</attach_topic>
+    </plugin>
+    <plugin filename="libgz-sim-detachable-joint-system.so" name="gz::sim::systems::DetachableJoint">
+      <parent_link>end</parent_link>
+      <child_model>descripe</child_model>
+      <child_link>411111</child_link>
+      <attach_topic>close_loop_411111</attach_topic>
+    </plugin>
+    <plugin filename="libgz_delta_controller2.so"
+            name="gz::sim::systems::DeltaMotorController2">
+      <kp>4.0</kp>
+      <ki>1.0</ki>
+      <kd>0.18</kd>
+      <!-- Feedforward: compensate joint damping and reflected inertia. -->
+      <kv>0.020</kv>
+      <ka>0.0</ka>
+      <torque_limit>0.25</torque_limit>
+      <integral_limit>0.25</integral_limit>
+      <anti_windup_gain>5.0</anti_windup_gain>
+      <twist_kp>0.00030</twist_kp>
+      <twist_kd>0.000025</twist_kd>
+      <twist_torque_limit>0.00080</twist_torque_limit>
+      <!-- 1 ms physics step / 10 = approximately 100 Hz feedback. -->
+      <feedback_decimation>10</feedback_decimation>
+    </plugin>
+    <joint name="world_to_base_link" type="fixed">
+      <parent>world</parent>
+      <child>base_link</child>
+    </joint>
+  </model>
+</sdf>

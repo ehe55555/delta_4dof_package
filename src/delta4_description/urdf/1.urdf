@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="delta4_robot">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-5.1936E-05 2.9686E-05 0.0056124" rpy="0 0 0" />
+      <mass value="1.5287" />
+      <inertia ixx="0.0042744" ixy="-7.4428E-07" ixz="1.302E-07" iyy="0.0042768" iyz="-1.5704E-07" izz="0.0082196" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/base_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1">
+    <inertial>
+      <origin xyz="0.0332191557919046 -4.07081591491387E-08 -2.30852152671712E-08" rpy="0 0 0" />
+      <mass value="0.0164328703182061" />
+      <inertia ixx="6.96008977557597E-07" ixy="-3.05683665436E-11" ixz="-1.54396755571041E-11" iyy="1.0778694503897E-05" iyz="-4.42594051439949E-12" izz="1.11962992701903E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/1.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_1" type="revolute">
+    <origin xyz="0.13 0 -0.02" rpy="1.5708 -0.08134 0" />
+    <parent link="base_link" />
+    <child link="1" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="11">
+    <inertial>
+      <origin xyz="0.187041649958656 3.04639278003171E-05 -0.000118298476555284" rpy="0 0 0" />
+      <mass value="0.0102579764680681" />
+      <inertia ixx="6.53497554218515E-08" ixy="-1.00662347173867E-13" ixz="2.55645062216074E-14" iyy="8.64652043610904E-05" iyz="1.01309643571517E-09" izz="8.64588045717685E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/11.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_11" type="revolute">
+    <origin xyz="0.08 0 0.014" rpy="0 0 -2.1423" />
+    <parent link="1" />
+    <child link="11" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="111">
+    <inertial>
+      <origin xyz="0.0105234847608626 -0.0195812695010976 -0.0133189286659302" rpy="0 0 0" />
+      <mass value="0.00786273505010893" />
+      <inertia ixx="2.21087038378526E-06" ixy="4.82526211923474E-07" ixz="2.87491033081575E-14" iyy="1.56393260426946E-06" iyz="-5.15729650872001E-14" izz="1.29721535623425E-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/111.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.505882352941176 0.505882352941176 0.584313725490196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/111.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_111" type="revolute">
+    <origin xyz="0.39485 0 0" rpy="0 0 0" />
+    <parent link="11" />
+    <child link="111" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="12">
+    <inertial>
+      <origin xyz="0.187041679018799 -3.04645412353907E-05 0.000118298681988704" rpy="0 0 0" />
+      <mass value="0.0102579762667969" />
+      <inertia ixx="6.53497456837694E-08" ixy="-7.64726099993218E-14" ixz="1.7972550285944E-14" iyy="8.64652043697065E-05" iyz="1.0131123246709E-09" izz="8.64588045410236E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/12.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.505882352941176 0.505882352941176 0.584313725490196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_12" type="revolute">
+    <origin xyz="0.08 0 -0.014" rpy="0 0 -2.1423" />
+    <parent link="1" />
+    <child link="12" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="121">
+    <inertial>
+      <origin xyz="-2.42861286636753E-15 5.20417042793042E-16 0.00407409549700105" rpy="0 0 0" />
+      <mass value="0.000539506193520435" />
+      <inertia ixx="1.25867201372513E-08" ixy="-2.06795153138257E-25" ixz="-5.46456192167844E-23" iyy="1.25867201372513E-08" iyz="-1.08257262667877E-22" izz="3.31683628481004E-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/121.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.505882352941176 0.505882352941176 0.584313725490196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/121.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_121" type="revolute">
+    <origin xyz="0.39485 0 0" rpy="0 0 0" />
+    <parent link="12" />
+    <child link="121" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="2">
+    <inertial>
+      <origin xyz="0.0332191557919039 -4.07081590381164E-08 -2.30852152394156E-08" rpy="0 0 0" />
+      <mass value="0.0164328703182062" />
+      <inertia ixx="6.96008977557598E-07" ixy="-3.05683665423741E-11" ixz="-1.54396755563603E-11" iyy="1.0778694503897E-05" iyz="-4.42594051820368E-12" izz="1.11962992701903E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/2.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_2" type="revolute">
+    <origin xyz="-0.065 -0.11258 -0.02" rpy="1.5708 -0.08134 -2.0944" />
+    <parent link="base_link" />
+    <child link="2" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="21">
+    <inertial>
+      <origin xyz="0.187041671275491 7.51833085465489E-05 -0.000147290992530053" rpy="0 0 0" />
+      <mass value="0.0102579763552886" />
+      <inertia ixx="6.53497671756376E-08" ixy="-1.59042436699127E-14" ixz="2.20147016547768E-14" iyy="8.64668414103596E-05" iyz="1.74497344875076E-09" izz="8.64571674826803E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/21.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/21.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_21" type="revolute">
+    <origin xyz="0.08 0 0.014" rpy="0 0 -2.1423" />
+    <parent link="2" />
+    <child link="21" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="211">
+    <inertial>
+      <origin xyz="-2.60902410786912E-15 4.57966997657877E-16 -0.00407409549700005" rpy="0 0 0" />
+      <mass value="0.000539506193520435" />
+      <inertia ixx="1.25867201372514E-08" ixy="0" ixz="-4.34350283999744E-24" iyy="1.25867201372514E-08" iyz="-3.60411820071804E-23" izz="3.31683628481004E-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/211.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.505882352941176 0.505882352941176 0.584313725490196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/211.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_211" type="revolute">
+    <origin xyz="0.39485 0 0" rpy="0 0 0" />
+    <parent link="21" />
+    <child link="211" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="22">
+    <inertial>
+      <origin xyz="0.187041660824382 -1.8358649849573E-05 0.000115267102918773" rpy="0 0 0" />
+      <mass value="0.0102579739221535" />
+      <inertia ixx="6.53497610686675E-08" ixy="-9.6562975300844E-15" ixz="1.93074676600917E-15" iyy="8.64649994334799E-05" iyz="6.2980780077917E-10" izz="8.64590092293636E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/22.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.505882352941176 0.505882352941176 0.584313725490196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/22.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_22" type="revolute">
+    <origin xyz="0.08 0 -0.014" rpy="0 0 -2.1423" />
+    <parent link="2" />
+    <child link="22" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="221">
+    <inertial>
+      <origin xyz="-2.38697950294409E-15 4.30211422042248E-16 0.00407409549700122" rpy="0 0 0" />
+      <mass value="0.000539506193520435" />
+      <inertia ixx="1.25867201372513E-08" ixy="0" ixz="-1.68484367013444E-24" iyy="1.25867201372513E-08" iyz="-3.9671112035544E-23" izz="3.31683628481004E-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/221.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.505882352941176 0.505882352941176 0.584313725490196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/221.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_221" type="revolute">
+    <origin xyz="0.39485 0 0" rpy="0 0 0" />
+    <parent link="22" />
+    <child link="221" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="3">
+    <inertial>
+      <origin xyz="0.0332191557919042 -4.17451739842534E-08 -2.11523470960984E-08" rpy="0 0 0" />
+      <mass value="0.0164328703182062" />
+      <inertia ixx="6.96008977557598E-07" ixy="-3.12582639046092E-11" ixz="-1.39903378102715E-11" iyy="1.07796110198338E-05" iyz="1.95422987822885E-08" izz="1.11953827542536E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/3.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_3" type="revolute">
+    <origin xyz="-0.065 0.11258 -0.02" rpy="1.6177 -0.08134 2.0944" />
+    <parent link="base_link" />
+    <child link="3" />
+    <axis xyz="0 -0.046858 -0.9989" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="31">
+    <inertial>
+      <origin xyz="0.187041679448977 4.69512144913309E-05 -0.000125195768451394" rpy="0 0 0" />
+      <mass value="0.0102579753897234" />
+      <inertia ixx="6.5349757908853E-08" ixy="-4.3356675841954E-14" ixz="2.83073338659512E-14" iyy="8.64656465733897E-05" iyz="1.44917960744151E-09" izz="8.64583622446981E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/31.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/31.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_31" type="revolute">
+    <origin xyz="0.08 0.00065601 0.013985" rpy="0.025366 -0.039423 -2.1428" />
+    <parent link="3" />
+    <child link="31" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="311">
+    <inertial>
+      <origin xyz="1.94289029309402E-16 8.88178419700125E-16 -0.00407409549700084" rpy="0 0 0" />
+      <mass value="0.000539506193520435" />
+      <inertia ixx="1.25867201372513E-08" ixy="2.06795153138257E-25" ixz="-5.06648125188729E-24" iyy="1.25867201372513E-08" iyz="-2.67799723314043E-23" izz="3.31683628481005E-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/311.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.505882352941176 0.505882352941176 0.584313725490196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/311.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_311" type="revolute">
+    <origin xyz="0.39485 0 0" rpy="0 0 0" />
+    <parent link="31" />
+    <child link="311" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="32">
+    <inertial>
+      <origin xyz="0.187041647499592 -4.69513401012145E-05 0.000125195839974696" rpy="0 0 0" />
+      <mass value="0.0102579753049328" />
+      <inertia ixx="6.53497538144675E-08" ixy="-2.03796351469718E-14" ixz="1.61252815464014E-14" iyy="8.64656465728051E-05" iyz="1.44917885692967E-09" izz="8.64583622360096E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/32.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.505882352941176 0.505882352941176 0.584313725490196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/32.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_32" type="revolute">
+    <origin xyz="0.08 -0.00065601 -0.013985" rpy="0.025366 -0.039423 -2.1428" />
+    <parent link="3" />
+    <child link="32" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="321">
+    <inertial>
+      <origin xyz="1.66533453693773E-16 8.32667268468867E-16 0.00407409549700036" rpy="0 0 0" />
+      <mass value="0.000539506193520436" />
+      <inertia ixx="1.25867201372514E-08" ixy="-9.30578189122156E-25" ixz="6.04875822929401E-24" iyy="1.25867201372514E-08" iyz="-2.19202862326552E-23" izz="3.31683628481004E-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/321.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.505882352941176 0.505882352941176 0.584313725490196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/321.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_321" type="revolute">
+    <origin xyz="0.39485 0 0" rpy="0 0 0" />
+    <parent link="32" />
+    <child link="321" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="4">
+    <inertial>
+      <origin xyz="4.22051041337745E-09 7.90242890569282E-09 0.00644065846947697" rpy="0 0 0" />
+      <mass value="0.00151305684520863" />
+      <inertia ixx="7.76380429873237E-08" ixy="1.06758944474477E-13" ixz="-1.27965978348483E-13" iyy="6.42955272093896E-08" iyz="2.85021212069995E-13" izz="5.48378642213392E-08" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/4.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.756862745098039 0.768627450980392 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_4" type="revolute">
+    <origin xyz="0 0 -0.02" rpy="0 0 0.037403" />
+    <parent link="base_link" />
+    <child link="4" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="41">
+    <inertial>
+      <origin xyz="-1.1518563880486E-15 -1.38777878078145E-16 -2.77555756156289E-17" rpy="0 0 0" />
+      <mass value="0.000852115950566532" />
+      <inertia ixx="1.2127907628535E-08" ixy="1.4954880343257E-23" ixz="0" iyy="1.48133687782392E-08" iyz="2.40392107614004E-24" izz="1.2127907628535E-08" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/41.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.756862745098039 0.768627450980392 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/41.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_41" type="revolute">
+    <origin xyz="0 0 -0.004" rpy="1.5708 0 0" />
+    <parent link="4" />
+    <child link="41" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="411">
+    <inertial>
+      <origin xyz="-0.113275443707768 -4.33624164353219E-10 7.89386833677241E-10" rpy="0 0 0" />
+      <mass value="0.0151504453724169" />
+      <inertia ixx="6.41413678015845E-07" ixy="-1.26739956996394E-13" ixz="-2.8488974216687E-13" iyy="3.92328614975377E-05" iyz="-1.06798340584005E-13" izz="3.95821990660991E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/411.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.756862745098039 0.768627450980392 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/411.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_411" type="revolute">
+    <origin xyz="0 0 0" rpy="1.5708 0 1.5708" />
+    <parent link="41" />
+    <child link="411" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="4111">
+    <inertial>
+      <origin xyz="-7.99613736335303E-10 -1.49719010800187E-09 0.120044998050398" rpy="0 0 0" />
+      <mass value="0.00798617591742343" />
+      <inertia ixx="1.96486123039808E-05" ixy="1.06758943387562E-13" ixz="1.27966214220805E-13" iyy="1.9806006955144E-05" iyz="-2.85021197651175E-13" izz="3.33730404518576E-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/4111.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/4111.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_4111" type="prismatic">
+    <origin xyz="-0.31187 0 0" rpy="1.5708 0 1.5708" />
+    <parent link="411" />
+    <child link="4111" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="41111">
+    <inertial>
+      <origin xyz="8.32667268468867E-17 -3.05311331771918E-16 5.55111512312578E-17" rpy="0 0 0" />
+      <mass value="0.000852115950566531" />
+      <inertia ixx="1.2127907628535E-08" ixy="-5.84478120089882E-24" ixz="-2.48154183765908E-24" iyy="1.48133687782392E-08" iyz="-1.77217946928894E-23" izz="1.2127907628535E-08" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/41111.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.756862745098039 0.768627450980392 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/41111.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_41111" type="revolute">
+    <origin xyz="0 0 0" rpy="1.5708 0 0" />
+    <parent link="4111" />
+    <child link="41111" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+  <link name="411111">
+    <inertial>
+      <origin xyz="-0.0258618985042968 -8.44322473048109E-10 1.53939538893866E-09" rpy="0 0 0" />
+      <mass value="0.00777029234237775" />
+      <inertia ixx="5.68324834833635E-07" ixy="-1.26739956115632E-13" ixz="-2.84889744406163E-13" iyy="5.9375202534848E-07" iyz="-1.06798541171994E-13" izz="5.80409509616738E-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/411111.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.756862745098039 0.768627450980392 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://delta4_description/meshes/411111.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_411111" type="revolute">
+    <origin xyz="0 0 0" rpy="1.5708 0 1.5708" />
+    <parent link="41111" />
+    <child link="411111" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="6.28" effort="1000" velocity="1000" />
+  </joint>
+</robot>

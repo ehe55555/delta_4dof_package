@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Delta 4DOF Control
+Comment=First-run launcher for the adjacent Delta 4DOF folder
+Exec=sh -c 'root=$(dirname "$1"); exec "$root/RUN_DELTA_4DOF.sh"' sh %k
+Icon=utilities-terminal
+Terminal=true
+Categories=Development;Robotics;
+StartupNotify=true

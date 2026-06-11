@@ -1,0 +1,998 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.11">
+  <model name="delta4_robot">
+    <static>false</static><pose>0 0 3 0 0 0</pose><link name="base_link">
+      <inertial>
+        <pose>-5.1935999999999999e-05 2.9686e-05 0.0056124 0 0 0</pose>
+        <mass>1.5286999999999999</mass>
+        <inertia>
+          <ixx>0.0042744000000000002</ixx>
+          <ixy>-7.4427999999999999e-07</ixy>
+          <ixz>1.3019999999999999e-07</ixz>
+          <iyy>0.0042767999999999999</iyy>
+          <iyz>-1.5704000000000001e-07</iyz>
+          <izz>0.0082196000000000005</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990199983 1 1 1</diffuse>
+          <ambient>0.990199983 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_1" type="revolute">
+      <pose relative_to="base_link">0.13 0 -0.02 1.5708 -0.081339999999999996 0</pose>
+      <parent>base_link</parent>
+      <child>1</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="1">
+      <pose relative_to="joint_1">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.033219155791904598 -4.0708159149138703e-08 -2.3085215267171199e-08 0 0 0</pose>
+        <mass>0.016432870318206099</mass>
+        <inertia>
+          <ixx>6.9600897755759696e-07</ixx>
+          <ixy>-3.05683665436e-11</ixy>
+          <ixz>-1.5439675557104101e-11</ixz>
+          <iyy>1.0778694503896999e-05</iyy>
+          <iyz>-4.4259405143994901e-12</iyz>
+          <izz>1.11962992701903e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="1_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/1.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196109 1 1 1</diffuse>
+          <ambient>0.990196109 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_11" type="revolute">
+      <pose relative_to="1">0.080000000000000002 0 0.014 0 0 -2.1423000000000001</pose>
+      <parent>1</parent>
+      <child>11</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="11">
+      <pose relative_to="joint_11">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.18704164995865599 3.04639278003171e-05 -0.000118298476555284 0 0 0</pose>
+        <mass>0.0102579764680681</mass>
+        <inertia>
+          <ixx>6.5349755421851496e-08</ixx>
+          <ixy>-1.00662347173867e-13</ixy>
+          <ixz>2.5564506221607399e-14</ixz>
+          <iyy>8.6465204361090394e-05</iyy>
+          <iyz>1.0130964357151699e-09</iyz>
+          <izz>8.6458804571768494e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="11_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/11.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196109 1 1 1</diffuse>
+          <ambient>0.990196109 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_111" type="revolute">
+      <pose relative_to="11">0.39484999999999998 0 0 0 0 0</pose>
+      <parent>11</parent>
+      <child>111</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="111">
+      <pose relative_to="joint_111">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.0105234847608626 -0.019581269501097599 -0.013318928665930201 0 0 0</pose>
+        <mass>0.0078627350501089301</mass>
+        <inertia>
+          <ixx>2.2108703837852598e-06</ixx>
+          <ixy>4.82526211923474e-07</ixy>
+          <ixz>2.8749103308157501e-14</ixz>
+          <iyy>1.5639326042694601e-06</iyy>
+          <iyz>-5.1572965087200102e-14</iyz>
+          <izz>1.29721535623425e-06</izz>
+        </inertia>
+      </inertial>
+      <visual name="111_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/111.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.632352948 0.632352948 0.730392158 1</diffuse>
+          <ambient>0.632352948 0.632352948 0.730392158 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_12" type="revolute">
+      <pose relative_to="1">0.080000000000000002 0 -0.014 0 0 -2.1423000000000001</pose>
+      <parent>1</parent>
+      <child>12</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="12">
+      <pose relative_to="joint_12">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.18704167901879901 -3.0464541235390702e-05 0.00011829868198870401 0 0 0</pose>
+        <mass>0.010257976266796901</mass>
+        <inertia>
+          <ixx>6.5349745683769399e-08</ixx>
+          <ixy>-7.6472609999321805e-14</ixy>
+          <ixz>1.7972550285944e-14</ixz>
+          <iyy>8.6465204369706494e-05</iyy>
+          <iyz>1.0131123246708999e-09</iyz>
+          <izz>8.6458804541023597e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="12_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/12.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.632352948 0.632352948 0.730392158 1</diffuse>
+          <ambient>0.632352948 0.632352948 0.730392158 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_121" type="revolute">
+      <pose relative_to="12">0.39484999999999998 0 0 0 0 0</pose>
+      <parent>12</parent>
+      <child>121</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="121">
+      <pose relative_to="joint_121">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-2.4286128663675299e-15 5.2041704279304203e-16 0.0040740954970010504 0 0 0</pose>
+        <mass>0.00053950619352043495</mass>
+        <inertia>
+          <ixx>1.25867201372513e-08</ixx>
+          <ixy>-2.0679515313825701e-25</ixy>
+          <ixz>-5.4645619216784403e-23</ixz>
+          <iyy>1.25867201372513e-08</iyy>
+          <iyz>-1.08257262667877e-22</iyz>
+          <izz>3.3168362848100398e-09</izz>
+        </inertia>
+      </inertial>
+      <visual name="121_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/121.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.632352948 0.632352948 0.730392158 1</diffuse>
+          <ambient>0.632352948 0.632352948 0.730392158 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_2" type="revolute">
+      <pose relative_to="base_link">-0.065000000000000002 -0.11258 -0.02 1.5708 -0.081339999999999968 -2.0943999999999998</pose>
+      <parent>base_link</parent>
+      <child>2</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="2">
+      <pose relative_to="joint_2">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.033219155791903897 -4.0708159038116401e-08 -2.30852152394156e-08 0 0 0</pose>
+        <mass>0.0164328703182062</mass>
+        <inertia>
+          <ixx>6.9600897755759802e-07</ixx>
+          <ixy>-3.0568366542374099e-11</ixy>
+          <ixz>-1.5439675556360301e-11</ixz>
+          <iyy>1.0778694503896999e-05</iyy>
+          <iyz>-4.42594051820368e-12</iyz>
+          <izz>1.11962992701903e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="2_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/2.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196109 1 1 1</diffuse>
+          <ambient>0.990196109 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_21" type="revolute">
+      <pose relative_to="2">0.080000000000000002 0 0.014 0 0 -2.1423000000000001</pose>
+      <parent>2</parent>
+      <child>21</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="21">
+      <pose relative_to="joint_21">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.18704167127549101 7.5183308546548894e-05 -0.000147290992530053 0 0 0</pose>
+        <mass>0.010257976355288599</mass>
+        <inertia>
+          <ixx>6.5349767175637603e-08</ixx>
+          <ixy>-1.59042436699127e-14</ixy>
+          <ixz>2.2014701654776799e-14</ixz>
+          <iyy>8.6466841410359595e-05</iyy>
+          <iyz>1.7449734487507601e-09</iyz>
+          <izz>8.6457167482680301e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="21_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/21.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196109 1 1 1</diffuse>
+          <ambient>0.990196109 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_211" type="revolute">
+      <pose relative_to="21">0.39484999999999998 0 0 0 0 0</pose>
+      <parent>21</parent>
+      <child>211</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="211">
+      <pose relative_to="joint_211">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-2.6090241078691198e-15 4.5796699765787697e-16 -0.0040740954970000503 0 0 0</pose>
+        <mass>0.00053950619352043495</mass>
+        <inertia>
+          <ixx>1.25867201372514e-08</ixx>
+          <ixy>0</ixy>
+          <ixz>-4.3435028399974403e-24</ixz>
+          <iyy>1.25867201372514e-08</iyy>
+          <iyz>-3.6041182007180399e-23</iyz>
+          <izz>3.3168362848100398e-09</izz>
+        </inertia>
+      </inertial>
+      <visual name="211_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/211.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.632352948 0.632352948 0.730392158 1</diffuse>
+          <ambient>0.632352948 0.632352948 0.730392158 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_22" type="revolute">
+      <pose relative_to="2">0.080000000000000002 0 -0.014 0 0 -2.1423000000000001</pose>
+      <parent>2</parent>
+      <child>22</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="22">
+      <pose relative_to="joint_22">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.18704166082438201 -1.8358649849573001e-05 0.000115267102918773 0 0 0</pose>
+        <mass>0.010257973922153499</mass>
+        <inertia>
+          <ixx>6.5349761068667498e-08</ixx>
+          <ixy>-9.6562975300843994e-15</ixy>
+          <ixz>1.9307467660091699e-15</ixz>
+          <iyy>8.6464999433479895e-05</iyy>
+          <iyz>6.2980780077916996e-10</iyz>
+          <izz>8.6459009229363605e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="22_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/22.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.632352948 0.632352948 0.730392158 1</diffuse>
+          <ambient>0.632352948 0.632352948 0.730392158 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_221" type="revolute">
+      <pose relative_to="22">0.39484999999999998 0 0 0 0 0</pose>
+      <parent>22</parent>
+      <child>221</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="221">
+      <pose relative_to="joint_221">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-2.3869795029440901e-15 4.3021142204224801e-16 0.0040740954970012204 0 0 0</pose>
+        <mass>0.00053950619352043495</mass>
+        <inertia>
+          <ixx>1.25867201372513e-08</ixx>
+          <ixy>0</ixy>
+          <ixz>-1.68484367013444e-24</ixz>
+          <iyy>1.25867201372513e-08</iyy>
+          <iyz>-3.9671112035544002e-23</iyz>
+          <izz>3.3168362848100398e-09</izz>
+        </inertia>
+      </inertial>
+      <visual name="221_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/221.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.632352948 0.632352948 0.730392158 1</diffuse>
+          <ambient>0.632352948 0.632352948 0.730392158 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_3" type="revolute">
+      <pose relative_to="base_link">-0.065000000000000002 0.11258 -0.02 1.6176999999999999 -0.081339999999999968 2.0943999999999998</pose>
+      <parent>base_link</parent>
+      <child>3</child>
+      <axis>
+        <xyz>0 -0.046857999999999997 -0.99890000000000001</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="3">
+      <pose relative_to="joint_3">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.033219155791904202 -4.1745173984253403e-08 -2.11523470960984e-08 0 0 0</pose>
+        <mass>0.0164328703182062</mass>
+        <inertia>
+          <ixx>6.9600897755759802e-07</ixx>
+          <ixy>-3.1258263904609199e-11</ixy>
+          <ixz>-1.39903378102715e-11</ixz>
+          <iyy>1.0779611019833799e-05</iyy>
+          <iyz>1.9542298782288501e-08</iyz>
+          <izz>1.11953827542536e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="3_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/3.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196109 1 1 1</diffuse>
+          <ambient>0.990196109 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_31" type="revolute">
+      <pose relative_to="3">0.080000000000000002 0.00065600999999999995 0.013984999999999999 0.025366000000000007 -0.039423000000000014 -2.1427999999999998</pose>
+      <parent>3</parent>
+      <child>31</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="31">
+      <pose relative_to="joint_31">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.18704167944897701 4.6951214491330897e-05 -0.000125195768451394 0 0 0</pose>
+        <mass>0.0102579753897234</mass>
+        <inertia>
+          <ixx>6.5349757908853003e-08</ixx>
+          <ixy>-4.3356675841953999e-14</ixy>
+          <ixz>2.83073338659512e-14</ixz>
+          <iyy>8.6465646573389697e-05</iyy>
+          <iyz>1.44917960744151e-09</iyz>
+          <izz>8.6458362244698096e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="31_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/31.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196109 1 1 1</diffuse>
+          <ambient>0.990196109 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_311" type="revolute">
+      <pose relative_to="31">0.39484999999999998 0 0 0 0 0</pose>
+      <parent>31</parent>
+      <child>311</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="311">
+      <pose relative_to="joint_311">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>1.94289029309402e-16 8.8817841970012504e-16 -0.0040740954970008396 0 0 0</pose>
+        <mass>0.00053950619352043495</mass>
+        <inertia>
+          <ixx>1.25867201372513e-08</ixx>
+          <ixy>2.0679515313825701e-25</ixy>
+          <ixz>-5.0664812518872901e-24</ixz>
+          <iyy>1.25867201372513e-08</iyy>
+          <iyz>-2.67799723314043e-23</iyz>
+          <izz>3.3168362848100502e-09</izz>
+        </inertia>
+      </inertial>
+      <visual name="311_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/311.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.632352948 0.632352948 0.730392158 1</diffuse>
+          <ambient>0.632352948 0.632352948 0.730392158 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_32" type="revolute">
+      <pose relative_to="3">0.080000000000000002 -0.00065600999999999995 -0.013984999999999999 0.025366000000000007 -0.039423000000000014 -2.1427999999999998</pose>
+      <parent>3</parent>
+      <child>32</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="32">
+      <pose relative_to="joint_32">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.18704164749959201 -4.6951340101214503e-05 0.00012519583997469601 0 0 0</pose>
+        <mass>0.0102579753049328</mass>
+        <inertia>
+          <ixx>6.5349753814467499e-08</ixx>
+          <ixy>-2.0379635146971801e-14</ixy>
+          <ixz>1.6125281546401398e-14</ixz>
+          <iyy>8.6465646572805096e-05</iyy>
+          <iyz>1.44917885692967e-09</iyz>
+          <izz>8.6458362236009598e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="32_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/32.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.632352948 0.632352948 0.730392158 1</diffuse>
+          <ambient>0.632352948 0.632352948 0.730392158 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_321" type="revolute">
+      <pose relative_to="32">0.39484999999999998 0 0 0 0 0</pose>
+      <parent>32</parent>
+      <child>321</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="321">
+      <pose relative_to="joint_321">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>1.6653345369377299e-16 8.3266726846886701e-16 0.0040740954970003599 0 0 0</pose>
+        <mass>0.00053950619352043604</mass>
+        <inertia>
+          <ixx>1.25867201372514e-08</ixx>
+          <ixy>-9.3057818912215595e-25</ixy>
+          <ixz>6.0487582292940097e-24</ixz>
+          <iyy>1.25867201372514e-08</iyy>
+          <iyz>-2.1920286232655201e-23</iyz>
+          <izz>3.3168362848100398e-09</izz>
+        </inertia>
+      </inertial>
+      <visual name="321_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/321.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.632352948 0.632352948 0.730392158 1</diffuse>
+          <ambient>0.632352948 0.632352948 0.730392158 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_4" type="revolute">
+      <pose relative_to="base_link">0 0 -0.02 0 0 0.037402999999999999</pose>
+      <parent>base_link</parent>
+      <child>4</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="4">
+      <pose relative_to="joint_4">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>4.2205104133774499e-09 7.9024289056928204e-09 0.0064406584694769696 0 0 0</pose>
+        <mass>0.0015130568452086299</mass>
+        <inertia>
+          <ixx>7.7638042987323696e-08</ixx>
+          <ixy>1.0675894447447699e-13</ixy>
+          <ixz>-1.2796597834848299e-13</ixz>
+          <iyy>6.4295527209389602e-08</iyy>
+          <iyz>2.85021212069995e-13</iyz>
+          <izz>5.4837864221339199e-08</izz>
+        </inertia>
+      </inertial>
+      <visual name="4_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/4.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.946078479 0.960784316 0.941176474 1</diffuse>
+          <ambient>0.946078479 0.960784316 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_41" type="revolute">
+      <pose relative_to="4">0 0 -0.0040000000000000001 1.5708 0 0</pose>
+      <parent>4</parent>
+      <child>41</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="41">
+      <pose relative_to="joint_41">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-1.1518563880485999e-15 -1.3877787807814501e-16 -2.7755575615628901e-17 0 0 0</pose>
+        <mass>0.00085211595056653203</mass>
+        <inertia>
+          <ixx>1.2127907628535e-08</ixx>
+          <ixy>1.4954880343257001e-23</ixy>
+          <ixz>0</ixz>
+          <iyy>1.4813368778239199e-08</iyy>
+          <iyz>2.4039210761400401e-24</iyz>
+          <izz>1.2127907628535e-08</izz>
+        </inertia>
+      </inertial>
+      <visual name="41_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/41.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.946078479 0.960784316 0.941176474 1</diffuse>
+          <ambient>0.946078479 0.960784316 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_411" type="revolute">
+      <pose relative_to="41">0 0 0 1.5708 -5.5511151231257827e-17 1.5708</pose>
+      <parent>41</parent>
+      <child>411</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="411">
+      <pose relative_to="joint_411">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.113275443707768 -4.3362416435321899e-10 7.8938683367724097e-10 0 0 0</pose>
+        <mass>0.0151504453724169</mass>
+        <inertia>
+          <ixx>6.4141367801584499e-07</ixx>
+          <ixy>-1.2673995699639401e-13</ixy>
+          <ixz>-2.8488974216686998e-13</ixz>
+          <iyy>3.9232861497537702e-05</iyy>
+          <iyz>-1.06798340584005e-13</iyz>
+          <izz>3.9582199066099103e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="411_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/411.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.946078479 0.960784316 0.941176474 1</diffuse>
+          <ambient>0.946078479 0.960784316 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_4111" type="prismatic">
+      <pose relative_to="411">-0.31186999999999998 0 0 1.5708 -5.5511151231257827e-17 1.5708</pose>
+      <parent>411</parent>
+      <child>4111</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="4111">
+      <pose relative_to="joint_4111">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-7.9961373633530296e-10 -1.4971901080018699e-09 0.12004499805039801 0 0 0</pose>
+        <mass>0.0079861759174234305</mass>
+        <inertia>
+          <ixx>1.9648612303980799e-05</ixx>
+          <ixy>1.06758943387562e-13</ixy>
+          <ixz>1.2796621422080499e-13</ixz>
+          <iyy>1.9806006955144e-05</iyy>
+          <iyz>-2.8502119765117498e-13</iyz>
+          <izz>3.3373040451857601e-07</izz>
+        </inertia>
+      </inertial>
+      <visual name="4111_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/4111.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196109 1 1 1</diffuse>
+          <ambient>0.990196109 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_41111" type="revolute">
+      <pose relative_to="4111">0 0 0 1.5708 0 0</pose>
+      <parent>4111</parent>
+      <child>41111</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="41111">
+      <pose relative_to="joint_41111">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>8.3266726846886704e-17 -3.05311331771918e-16 5.5511151231257802e-17 0 0 0</pose>
+        <mass>0.00085211595056653095</mass>
+        <inertia>
+          <ixx>1.2127907628535e-08</ixx>
+          <ixy>-5.8447812008988197e-24</ixy>
+          <ixz>-2.4815418376590801e-24</ixz>
+          <iyy>1.4813368778239199e-08</iyy>
+          <iyz>-1.7721794692889401e-23</iyz>
+          <izz>1.2127907628535e-08</izz>
+        </inertia>
+      </inertial>
+      <visual name="41111_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/41111.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.946078479 0.960784316 0.941176474 1</diffuse>
+          <ambient>0.946078479 0.960784316 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint_411111" type="revolute">
+      <pose relative_to="41111">0 0 0 1.5708 -5.5511151231257827e-17 1.5708</pose>
+      <parent>41111</parent>
+      <child>411111</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.2800000000000002</upper>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="411111">
+      <pose relative_to="joint_411111">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.0258618985042968 -8.4432247304810904e-10 1.5393953889386601e-09 0 0 0</pose>
+        <mass>0.0077702923423777501</mass>
+        <inertia>
+          <ixx>5.6832483483363501e-07</ixx>
+          <ixy>-1.2673995611563199e-13</ixy>
+          <ixz>-2.84889744406163e-13</ixz>
+          <iyy>5.9375202534848002e-07</iyy>
+          <iyz>-1.0679854117199401e-13</iyz>
+          <izz>5.8040950961673799e-07</izz>
+        </inertia>
+      </inertial>
+      <visual name="411111_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta4_description/meshes/411111.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.946078479 0.960784316 0.941176474 1</diffuse>
+          <ambient>0.946078479 0.960784316 0.941176474 1</ambient>
+        </material>
+      </visual>
+    </link>
+  <joint name="world_to_base_link" type="fixed"><parent>world</parent><child>base_link</child></joint></model>
+</sdf>
